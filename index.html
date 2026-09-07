@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KeyScope — Discover What People Search For</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="logo">
+           <span class="logo-mark">P</span>
+            <span class="logo-text">KeyScope</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#how-it-works">How it works</a>
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="nav-button">Get started</button>
+    </header>
+
+
+    <!-- Hero -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    KEYWORD DISCOVERY
+                </div>
+
+                <h1>
+                    Discover what
+                    <span>people search for.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore keywords, topics, and emerging interests
+                    to make smarter content decisions.
+                </p>
+
+
+                <!-- Search -->
+                <div class="search-container">
+
+                    <div class="search-icon">
+                        ⌕
+                    </div>
+
+                    <input
+                        type="text"
+                        id="keywordInput"
+                        placeholder="Explore a topic or keyword..."
+                        autocomplete="off"
+                    >
+
+                    <button id="searchButton">
+                        Search
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+                <div class="search-note">
+                    <span>Try</span>
+                    <button class="suggestion">wedding ideas</button>
+                    <button class="suggestion">home decor</button>
+                    <button class="suggestion">travel</button>
+                </div>
+
+            </div>
+
+
+            <!-- Decorative research card -->
+
+            <div class="hero-visual">
+
+                <div class="research-card">
+
+                    <div class="card-header">
+                        <div>
+                            <span class="card-label">DISCOVERY</span>
+                            <h3>Keyword landscape</h3>
+                        </div>
+
+                        <span class="card-menu">•••</span>
+                    </div>
+
+
+                    <div class="keyword-preview">
+
+                        <div class="keyword-row featured">
+                            <div>
+                                <strong>wedding ideas</strong>
+                                <span>Growing interest</span>
+                            </div>
+
+                            <div class="keyword-metric">
+                                <strong>↑ 31%</strong>
+                            </div>
+                        </div>
+
+
+                        <div class="keyword-row">
+                            <div>
+                                <strong>wedding planning</strong>
+                                <span>Popular topic</span>
+                            </div>
+
+                            <div class="keyword-metric">
+                                <strong>↑ 18%</strong>
+                            </div>
+                        </div>
+
+
+                        <div class="keyword-row">
+                            <div>
+                                <strong>wedding decor</strong>
+                                <span>Related topic</span>
+                            </div>
+
+                            <div class="keyword-metric">
+                                <strong>↑ 12%</strong>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-footer">
+                        <span>KEYSCOPE INSIGHT</span>
+                        <span>↗</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Search Results -->
+
+        <section class="results-section" id="resultsSection">
+
+            <div class="results-heading">
+                <div>
+                    <span class="results-label">RESEARCH RESULTS</span>
+                    <h2 id="resultsTitle">Keyword landscape</h2>
+                </div>
+
+                <button class="new-search" id="newSearchButton">
+                    New search
+                    <span>↗</span>
+                </button>
+            </div>
+
+
+            <div class="insight-grid">
+
+                <div class="insight-card">
+                    <span>TOPIC</span>
+                    <strong id="topicResult">—</strong>
+                    <small>Current search</small>
+                </div>
+
+                <div class="insight-card">
+                    <span>OPPORTUNITIES</span>
+                    <strong>24</strong>
+                    <small>Related keywords</small>
+                </div>
+
+                <div class="insight-card">
+                    <span>MOMENTUM</span>
+                    <strong>Rising</strong>
+                    <small>Demo indicator</small>
+                </div>
+
+            </div>
+
+
+            <div class="keyword-table">
+
+                <div class="table-header">
+                    <span>KEYWORD</span>
+                    <span>INTEREST</span>
+                    <span>MOMENTUM</span>
+                </div>
+
+
+                <div class="result-row">
+                    <div>
+                        <strong id="keywordOne">—</strong>
+                        <small>Related search</small>
+                    </div>
+
+                    <span>High</span>
+                    <span class="momentum">↑ Rising</span>
+                </div>
+
+
+                <div class="result-row">
+                    <div>
+                        <strong id="keywordTwo">—</strong>
+                        <small>Related search</small>
+                    </div>
+
+                    <span>Medium</span>
+                    <span class="momentum">↑ Rising</span>
+                </div>
+
+
+                <div class="result-row">
+                    <div>
+                        <strong id="keywordThree">—</strong>
+                        <small>Related search</small>
+                    </div>
+
+                    <span>Medium</span>
+                    <span class="momentum">→ Stable</span>
+                </div>
+
+            </div>
+
+
+            <p class="demo-disclaimer">
+                Demo results shown for interface development.
+                Data will only be displayed according to the permissions
+                and capabilities of the connected platform API.
+            </p>
+
+        </section>
+        <!-- Trust / positioning -->
+
+                <section class="positioning">
+
+            <p>
+                A focused research workspace for creators,
+                marketers, and curious minds.
+            </p>
+
+        </section>
+
+
+        <footer class="site-footer">
+
+            <div class="footer-brand">
+                <span class="logo-mark">K</span>
+                <span>KeyScope</span>
+            </div>
+
+            <div class="footer-links">
+                <a href="{{ url_for('privacy') }}">Privacy Policy</a>
+            </div>
+
+            <p>
+                © 2026 THE OUTLINE STUDIOS
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
